@@ -1,0 +1,54 @@
+Please find below instructions for automation installation in MAC machine:
+
+1.Install Home brew in Mac machine-- Home brew is a (Pacakage manager) to install all software from your terminal by running  one command.
+>Open terminal
+>Run below command & install Home brew.
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+>After installtion run this command:brew cask install foo
+
+>After installation, we need to install below software.
+>>brew tap caskroom/versions
+>>brew cask install intellij-idea-ce(Intellij -This is IDE for coding & running code.)
+>> brew cask install java8 (Java)
+>>brew cask install android-sdk (The Android SDK (software development kit) is a set of development tools used to develop applications for Android platform)
+>>Install Node
+brew install node
+>>  Navigate to below link:
+https://github.com/appium/appium-desktop/releases/tag/v1.11.0
+>>Download(Appium 1.11.0.dmg) , after downloading install it.
+>> Download Sourcetree for interacting with Framework repositories:
+https://www.sourcetreeapp.com/
+>>Please follow below URL which has all steps to set your java path including all syntax.
+http://www.sajeconsultants.com/how-to-set-java_home-on-mac-os-x/
+
+If your a new user in Git you need to generate a SSH key & save it into your git profile.
+Below URL has all steps & syntax commands.
+https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html
+
+
+2.Download the project to your system.
+>>Open Source tree & navigate to project stash URl.
+>>Navigate to Project & clone it(your local machine)
+>>Once clone done, follow below steps to open & configure in Intellij
+
+3.Configure sdk & java path in Appium.
+>> Open Appium.
+>> Navigate & open 'Edit Configurations'
+>> Save below path for Android home
+/Users/user_name/Library/Android/sdk- (the username is of your local machine).
+>> Save below path for Java home
+/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
+
+Note:Please note your path for above andriod sdk & java may vary as per your installation.
+for getting path run below command.
+Java:
+/usr/libexec/java_home
+
+
+4.Configure your Framwork in intellj
+>>Open Intellij & import a Project from your cloned location.
+>>Post> Go to Preference & install Maven Plugin(It will restart the Intellij post installation)
+>>Open Intellij>> Go to Preference & install plugin cucumber for java & Gherkin.
+
+Note: Unmark the substeps intellij plugin(don't install it.)
